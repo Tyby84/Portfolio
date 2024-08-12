@@ -1,0 +1,15 @@
+@mixin title {
+    color: #516bb4;
+        width: 15%;
+        margin: 0 auto 30px auto;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #516bb4;
+        text-align: center;
+}
+
+@mixin tablet820 {
+    @media screen and (max-width: 820px) {
+        @content;
+    }
+    }
