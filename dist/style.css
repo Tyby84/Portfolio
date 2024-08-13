@@ -77,7 +77,9 @@ header .hero button {
 
 #about {
   background-image: url("../pics/worklg.jpg");
-  background-position: 100% 0%;
+  background-color: #ffffffd5;
+  background-blend-mode: overlay;
+  background-position: 0% 100%;
   padding: 20px 10px 30px 10px;
 }
 #about h1 {
@@ -108,6 +110,10 @@ header .hero button {
 }
 
 #ref {
+  background-image: url("../pics/reflarge.jpg");
+  background-color: #eeeeee93;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
   margin-bottom: 20px;
 }
 #ref h1 {
@@ -119,16 +125,25 @@ header .hero button {
   border-bottom: 2px solid #516bb4;
   text-align: center;
 }
+#ref h3 {
+  width: 40%;
+  margin: 10px auto 50px auto;
+  text-align: center;
+  color: #ab8023;
+}
 #ref .work {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 #ref .work img {
   width: 350px;
+  border: 3px solid #516bb4;
 }
 #ref .work p {
   width: 350px;
   font-size: 21px;
+  align-self: center;
 }
 
 footer {

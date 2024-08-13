@@ -91,7 +91,9 @@ header {
 #about {
     //background-color: #bebebe;
     background-image: url('../pics/worklg.jpg');
-    background-position: 100% 0%;
+    background-color: #ffffffd5;
+    background-blend-mode: overlay;
+    background-position: 0% 100%;
     padding: 20px 10px 30px 10px;
     h1 {
         @include title;
@@ -115,20 +117,32 @@ header {
     }
 }
 #ref {
+    background-image: url('../pics/reflarge.jpg');
+    background-color: #eeeeee93;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
     margin-bottom: 20px;
     h1 {
         @include title;
     }
+    h3 {
+        width: 40%;
+        margin: 10px auto 50px auto;
+        text-align: center;
+        color: $second;
+    }
     .work {
         display: flex;
         justify-content: space-evenly;
-
+        margin-bottom: 50px;
         img {
             width: 350px;
+            border: 3px solid $main-color;
         }
         p {
             width: 350px;
             font-size: 21px;
+            align-self: center;
         }
     }
     
