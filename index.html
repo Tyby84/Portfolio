@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="methods.js"></script>
@@ -15,9 +17,9 @@
     <header>
         <nav id="navbar">
             <ul>
-                <li>Szolgáltatások</li>
-                <li>Munkáim</li>
-                <li>Magamrol</li>
+            <a id="about-link" href="#about"><li class="nav__li"><i class="fas fa-book-open"></i> Szolgáltatások</li></a>
+			<a id="skills-link" href="#ref"><li class="nav__li"><i class="fas fa-layer-group"></i> Munkáim</li></a>
+			<a id="contact-link" href="#me"><li class="nav__li"><i class="far fa-compass"></i> Magamról</li></a>
             </ul>
         </nav>
         <div class="hero">
@@ -27,7 +29,8 @@
             <p>Az egyszerűbb weblapoktól a Landoló oldalakon át a webshopokig, elkészítjük 
                 a legmegfelelőbbet.
             </p>
-            <button>Érdekel</button>
+            <a href="#about">Érdekel</a>>
+            
         </div>
         </div>
     </header>
@@ -74,7 +77,7 @@
     </div>
     <div id="ref">
         <h1>Munkáim</h1>
-        <h3>Szeretnék bemutatni pár kiemelkedőbb munkám. A weboldalak kialakításakor az egyediségre
+        <h3>Szeretnék bemutatni pár kiemelkedőbb munkám. <br>A weboldalak kialakításakor az egyediségre
             törekszem, hiszen a weboldalad a vállakozásod tükörképe, így fontos, hogy Téged és az 
             általad képviselt értékeket közvetítse.
         </h3>
@@ -109,16 +112,12 @@
     </div>
     <div id="me">
         <h1>Magamról</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi officia suscipit tempora ipsam, placeat ad excepturi sapiente nisi, libero perspiciatis beatae impedit sit vitae modi, nihil deleniti nostrum. Praesentium, accusamus!
-        Suscipit fugit illo ut quod minima nemo, dignissimos reiciendis dolorem ex, possimus modi, veritatis autem voluptatum? Optio ipsa nisi corrupti totam deleniti repellat vel pariatur, possimus, voluptate similique sit explicabo.
-        Vitae, est temporibus eum praesentium eaque nesciunt explicabo hic commodi iste tenetur laborum blanditiis voluptas voluptate, reiciendis neque dolore cum iure a laboriosam alias provident et similique odit! Quisquam, error!
-        Eaque nobis, temporibus a sapiente similique soluta illum atque veritatis dolor cupiditate. Amet aperiam similique ab. Omnis debitis ab suscipit asperiores repudiandae doloremque est porro eius? Quae nam sapiente modi!
-        Ipsam magni corrupti dolorem corporis, quibusdam voluptate ducimus eaque provident? Incidunt, mollitia! Rem laboriosam similique sit. Ullam eum voluptate, inventore distinctio, explicabo recusandae molestiae perferendis asperiores molestias fugit dolorem praesentium.
-        Maxime alias aut eum nesciunt aliquam vero quasi deleniti adipisci consectetur autem fugit enim assumenda, quae dignissimos id porro incidunt delectus aperiam impedit molestiae est totam magni! Impedit, doloribus odit.
-        Molestias ut magni obcaecati recusandae, aut ea hic fuga, voluptatum voluptas, alias reiciendis blanditiis voluptatibus ipsa minus delectus explicabo quibusdam eaque commodi animi aliquam laboriosam. Asperiores, dignissimos qui! Repellat, tempore?
-        Dolor, fugit magnam? In eveniet quae quos nemo placeat, quaerat earum quo vero voluptatum corrupti! Laborum itaque in nulla saepe, quos optio, assumenda ab nesciunt eius ea provident rem? Perferendis.
-        Voluptates doloribus voluptate dolorum, ipsam officia quam aliquam earum obcaecati dolorem quaerat quidem odit et enim tempore. Assumenda sit obcaecati quasi ex ut fuga facilis excepturi, quaerat dicta eius. Exercitationem!
-        Aliquid accusantium laboriosam ullam nihil tempora id beatae explicabo asperiores itaque, repudiandae dolores officiis eius dolorem assumenda animi inventore nisi quis excepturi quisquam dolorum, quasi nam fugit totam? Suscipit, accusantium?</p>
+        <p>Fenyvesi Tibornak hívnak. <br>Londonban kezdtem webfejlesztést tanulni. Több kisebb londoni és 
+            magyar vállakozónak készítettem weboldalt. Dolgoztam szegeden egy webfejlesztő cégnél is, ahol
+            weboldalakat és webalkalmazásokat készítve tovább bővítettem a webfejlesztő tudásom. <br> Jelenleg vállalkozóként dolgozom, kezdő vállakozóknak 
+            készítek weboldalakat, webshopokat. Ha már fent vagy az internet tengerében, de nem vagy elégedett 
+            az oldaladdal, keress meg bátran, adhatok ötleteket vagy módosíthatok is a weboldaladon.
+        </p>
     </div>
 </body>
 <footer>
