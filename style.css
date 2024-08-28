@@ -43,9 +43,10 @@ header .hero {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 820px) {
   header .hero {
     background-image: url("./pics/officemed.jpg");
+    height: auto;
   }
 }
 header .hero .intro {
@@ -54,6 +55,11 @@ header .hero .intro {
   padding: 20px 20px;
   text-align: center;
   border-radius: 50px;
+}
+@media screen and (max-width: 820px) {
+  header .hero .intro {
+    width: 100%;
+  }
 }
 header .hero h1 {
   color: #eee;
@@ -86,6 +92,20 @@ header .hero a {
   border-radius: 10px;
   cursor: pointer;
 }
+header a.arrow {
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  background-color: rgba(167, 167, 167, 0.4941176471);
+  border-radius: 50%;
+  padding: 5px 5px 0 7px;
+}
+@media screen and (max-width: 820px) {
+  header a.arrow {
+    display: none;
+  }
+}
 
 #about {
   background-image: url("./pics/worklg.jpg");
@@ -93,6 +113,11 @@ header .hero a {
   background-blend-mode: overlay;
   background-position: 0% 100%;
   padding: 20px 10px 30px 10px;
+}
+@media screen and (max-width: 820px) {
+  #about {
+    background-image: url("./pics/workmed.jpg");
+  }
 }
 #about h1 {
   color: #516bb4;
@@ -103,14 +128,32 @@ header .hero a {
   border-bottom: 2px solid #516bb4;
   text-align: center;
 }
+@media screen and (max-width: 820px) {
+  #about h1 {
+    width: 40%;
+  }
+}
 #about .card {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 820px) {
+  #about .card {
+    flex-direction: column;
+  }
+}
 #about .card .resp {
   width: 400px;
   text-align: center;
+}
+@media screen and (max-width: 820px) {
+  #about .card .resp {
+    width: auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 #about .card .resp h3 {
   color: #516bb4;
@@ -138,6 +181,11 @@ header .hero a {
   border-bottom: 2px solid #516bb4;
   text-align: center;
 }
+@media screen and (max-width: 820px) {
+  #ref h1 {
+    width: 40%;
+  }
+}
 #ref h3 {
   width: 40%;
   margin: 10px auto 50px auto;
@@ -145,19 +193,44 @@ header .hero a {
   color: #303030;
   line-height: 1.4;
 }
+@media screen and (max-width: 820px) {
+  #ref h3 {
+    width: 90%;
+  }
+}
 #ref .work {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 820px) {
+  #ref .work {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #ref .work img {
   width: 350px;
   border: 3px solid #516bb4;
+}
+@media screen and (max-width: 820px) {
+  #ref .work img {
+    width: 70%;
+  }
 }
 #ref .work p {
   width: 350px;
   font-size: 21px;
   align-self: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 820px) {
+  #ref .work p {
+    width: 70%;
+    font-size: 22px;
+  }
 }
 
 #me {
@@ -166,6 +239,11 @@ header .hero a {
   background-blend-mode: overlay;
   background-attachment: fixed;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 820px) {
+  #me {
+    background-image: url("./pics/refmed.jpg");
+  }
 }
 #me h1 {
   color: #516bb4;
@@ -176,6 +254,11 @@ header .hero a {
   border-bottom: 2px solid #516bb4;
   text-align: center;
 }
+@media screen and (max-width: 820px) {
+  #me h1 {
+    width: 40%;
+  }
+}
 #me p {
   padding-left: 300px;
   width: 600px;
@@ -183,6 +266,13 @@ header .hero a {
   line-height: 1.8;
   color: #383838;
   text-align: center;
+}
+@media screen and (max-width: 820px) {
+  #me p {
+    padding-left: 0px;
+    width: 90%;
+    margin: 5px auto;
+  }
 }
 
 footer {
@@ -192,12 +282,25 @@ footer {
   justify-content: space-around;
   background-color: #516bb4;
 }
+@media screen and (max-width: 820px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer a, footer p {
   color: #eee;
   text-decoration: none;
 }
 footer .footericon, footer p {
   font-size: 25px;
+}
+@media screen and (max-width: 820px) {
+  footer .footericon, footer p {
+    font-size: 19px;
+    padding-bottom: 10px;
+  }
 }
 footer span {
   padding-left: 5px;

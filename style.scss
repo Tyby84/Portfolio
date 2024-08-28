@@ -11,26 +11,20 @@ $second: #303030;
 }
 html {
     scroll-behavior: smooth;
-
+    
 }
 
-header {
-    
- 
+header { 
     #navbar {
-        //background-image: url('../pics/nav.jpeg');
-        //display: none;
         display: flex;
         position: absolute;
         top: 0;
         justify-content: flex-end;
         width: 100%;
         color: #eee;
-        //background-blend-mode: overlay;
         border-bottom: 1px solid #eee;
         ul {
             display: flex;
-            
             padding-top: 15px;
             padding-bottom: 15px;
             li {
@@ -49,18 +43,16 @@ header {
         height: 100vh;
         background-color: #343434;
         background-image: url('./pics/office_1920.jpg');
-        background-position: 0% 00%;
-    @media screen and (max-width:1280px) {
-        background-image: url('./pics/officemed.jpg');
+        background-position: 0% 0%;
+    
+    @include tablet820 {
+        background-image: url('./pics/officemed.jpg'); 
+        height: auto;
     }
     
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-        //padding-left: 10%;
-        //padding-top: 16vh;
-
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+        background-attachment: fixed;    
         .intro {
             //background-color: #516bb48f;
             //background-image: url('../pics/nav.jpeg');
@@ -69,7 +61,9 @@ header {
             padding: 20px 20px;
             text-align: center;
             border-radius: 50px;
-           
+            @include tablet820 {
+                width: 100%;  
+            }
         }
         
         h1 {
@@ -103,12 +97,28 @@ header {
             border-radius: 10px;
             cursor: pointer;
         }
+       
     }
+    a.arrow {
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        background-color: #a7a7a77e;
+        border-radius: 50%;
+        padding: 5px 5px 0 7px;
+        @include tablet820 {
+            display: none;
+        }
+     }
    
 }
 #about {
     //background-color: #bebebe;
     background-image: url('./pics/worklg.jpg');
+    @include tablet820 {
+        background-image: url('./pics/workmed.jpg');
+    }
     background-color: #ffffffd5;
     background-blend-mode: overlay;
     //background-attachment: fixed;
@@ -118,14 +128,26 @@ header {
     
     h1 {
         @include title;
+        @include tablet820 {
+            width: 40%;
+        }
     }
     .card {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 40px;
+        @include tablet820 {
+            flex-direction: column;
+        }
         .resp {
             width: 400px;
             text-align: center;
+            @include tablet820 {
+                width: auto;
+                margin-bottom: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
             h3 {
                 color: $main-color;
                 margin-bottom: 10px;
@@ -135,6 +157,7 @@ header {
                 margin-top: 5px;
             }
         }
+        
     }
 }
 #ref {
@@ -147,6 +170,9 @@ header {
     //margin-bottom: 20px;
     h1 {
         @include title;
+        @include tablet820 {
+            width: 40%;
+        }
     }
     h3 {
         width: 40%;
@@ -154,31 +180,55 @@ header {
         text-align: center;
         color: $second;
         line-height: 1.4;
+        @include tablet820 {
+          width: 90%;  
+        }
     }
     .work {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 50px;
+        @include tablet820 {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;  
+        }
         img {
             width: 350px;
             border: 3px solid $main-color;
+            @include tablet820 {
+                width: 70%;
+            }
+            
         }
         p {
             width: 350px;
             font-size: 21px;
             align-self: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            @include tablet820 {
+                width: 70%;
+                font-size: 22px;
+            }
         }
     }
     
 }
 #me {
     background-image: url('./pics/reflarge.jpg');
+    @include tablet820 {
+        background-image: url('./pics/refmed.jpg');
+    }
     background-color: #eeeeee93;
     background-blend-mode: overlay;
     background-attachment: fixed;
     padding-bottom: 20px;
     h1 {
         @include title;
+        @include tablet820 {
+            width: 40%;
+        }
     }
     p {
         padding-left: 300px;
@@ -187,6 +237,11 @@ header {
         line-height: 1.8;
         color: #383838;
         text-align: center;
+        @include tablet820 {
+            padding-left: 0px;
+            width: 90%;
+            margin: 5px auto;  
+        }
     }
 }
 footer {
@@ -195,7 +250,11 @@ footer {
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
-    
+    @include tablet820 {
+        flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
     a,p {
         color: #eee;
         text-decoration: none;
@@ -203,6 +262,10 @@ footer {
     background-color: $main-color;
     .footericon,p {
         font-size: 25px;
+        @include tablet820 {
+            font-size: 19px;
+            padding-bottom: 10px;
+        }
     }
     span {
         padding-left: 5px;
