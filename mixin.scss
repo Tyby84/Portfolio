@@ -13,3 +13,9 @@
         @content;
     }
     }
+
+    @mixin mobil {
+        @media screen and (max-width: 625px) {
+            @content;
+        }
+        }
