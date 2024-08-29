@@ -185,7 +185,6 @@ header a.arrow {
 }
 
 #about {
-  background-image: url("./pics/pinelg.jpg");
   /* @include tablet820 {
       background-image: url('./pics/workmed.jpg');
 
