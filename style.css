@@ -185,16 +185,15 @@ header a.arrow {
 }
 
 #about {
-  background-image: url("./pics/worklg.jpg");
+  background-image: url("./pics/pinelg.jpg");
+  /* @include tablet820 {
+      background-image: url('./pics/workmed.jpg');
+
+  } */
   background-color: rgba(255, 255, 255, 0.8352941176);
   background-blend-mode: overlay;
   background-position: 0% 100%;
   padding: 20px 10px 30px 10px;
-}
-@media screen and (max-width: 820px) {
-  #about {
-    background-image: url("./pics/workmed.jpg");
-  }
 }
 #about h1 {
   color: #516bb4;
@@ -238,7 +237,7 @@ header a.arrow {
   }
 }
 #about .card .resp h3 {
-  color: #516bb4;
+  color: #3d3b3b;
   margin-bottom: 10px;
 }
 #about .card .resp p {

@@ -180,11 +180,11 @@ header {
 }
 #about {
     //background-color: #bebebe;
-    background-image: url('./pics/worklg.jpg');
-    @include tablet820 {
+    background-image: url('./pics/pinelg.jpg');
+    /* @include tablet820 {
         background-image: url('./pics/workmed.jpg');
         
-    }
+    } */
     background-color: #ffffffd5;
     background-blend-mode: overlay;
     //background-attachment: fixed;
@@ -217,7 +217,7 @@ header {
                 padding-right: 10px;
             }
             h3 {
-                color: $main-color;
+                color: #3d3b3b;
                 margin-bottom: 10px;
             }
             p {
