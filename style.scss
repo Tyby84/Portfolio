@@ -272,6 +272,9 @@ header {
             @include tablet820 {
                 width: 70%;
             }
+            @include mobil {
+                width: 90%;
+            }
             
         }
         p {

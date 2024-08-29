@@ -311,6 +311,11 @@ header a.arrow {
     width: 70%;
   }
 }
+@media screen and (max-width: 625px) {
+  #ref .work img {
+    width: 90%;
+  }
+}
 #ref .work p {
   width: 350px;
   font-size: 21px;
