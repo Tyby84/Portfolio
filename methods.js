@@ -8,3 +8,6 @@ function scrollFunction() {
     //document.getElementById("navbar").style.display = "none";
   }
 }
+function myFunction(x) {
+  x.classList.toggle("change");
+}
