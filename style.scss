@@ -33,13 +33,13 @@ header {
                 color: #eee;
             }
         } 
-        @include tablet820 {
+        @include mobil{
          display: none;       
         }
     }
     .mobilnav {
         display: none;
-        @include tablet820 {
+        @include mobil{
             display: block;
             position: fixed;
             top: 10px;
@@ -72,7 +72,7 @@ header {
       .bar1, .bar2, .bar3 {
         width: 30px;
         height: 3px;
-        background-color: #cacaca;
+        background-color: $main-color;
         margin: 6px 0;
         transition: 0.4s;
       }
@@ -235,7 +235,9 @@ header {
     background-position: 0 0;
     background-attachment: fixed;
     padding-bottom: 20px;
-    //margin-bottom: 20px;
+    @include mobil {
+        padding: 15px
+    }
     h1 {
         @include title;
         @include tablet820 {
@@ -281,6 +283,10 @@ header {
             @include tablet820 {
                 width: 70%;
                 font-size: 22px;
+            }
+            @include mobil {
+                width: 90%;
+                text-align: justify;
             }
         }
     }
