@@ -48,6 +48,7 @@ header .mobilnav {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    z-index: 99;
   }
   header .mobilnav ul {
     display: none;
