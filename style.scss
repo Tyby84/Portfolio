@@ -309,7 +309,7 @@ header {
     background-blend-mode: overlay;
     background-attachment: fixed;
     padding-bottom: 20px;
-    h1 {
+    h1,h3 {
         @include title;
         @include tablet820 {
             width: 40%;
@@ -317,6 +317,7 @@ header {
     }
     p {
         padding-left: 300px;
+        margin-bottom: 10px;
         width: 600px;
         font-size: 20px;
         line-height: 1.8;

@@ -354,7 +354,7 @@ header a.arrow {
     background-image: url("./pics/refmed.jpg");
   }
 }
-#me h1 {
+#me h1, #me h3 {
   color: #516bb4;
   width: 15%;
   margin: 0 auto 30px auto;
@@ -364,12 +364,13 @@ header a.arrow {
   text-align: center;
 }
 @media screen and (max-width: 820px) {
-  #me h1 {
+  #me h1, #me h3 {
     width: 40%;
   }
 }
 #me p {
   padding-left: 300px;
+  margin-bottom: 10px;
   width: 600px;
   font-size: 20px;
   line-height: 1.8;
